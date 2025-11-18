@@ -1,11 +1,12 @@
 export default function test()
 {
     return(
-       <div className="flex">
-        <div>col1</div>
-        <div>col2</div>
-        <div>col3</div>
-           <div>col4</div>
-       </div>
+        <div>
+             <section className="h-screen bg-green-400 flex items-center justify-center text-center text-3xl">
+        <p>
+            lorem
+        </p>    
+    </section>
+        </div>
     )
 }
