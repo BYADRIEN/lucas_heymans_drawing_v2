@@ -4,6 +4,9 @@ import { Lora, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
+import Slider from "../components/sections/slider/page";
+import About from "../components/sections/aboutme/page";
+import "../style/style.css";
 
 // 1. Définissez la police PRINCIPALE (sans-serif/serif)
 const lora = Lora({
@@ -38,6 +41,8 @@ export default function RootLayout({
       >
         <main>
           < Header />
+          < Slider />
+          < About />
           {children}
           < Footer />
         </main>
