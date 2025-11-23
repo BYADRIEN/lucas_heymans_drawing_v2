@@ -1,14 +1,22 @@
 export default function footer()
 {
     return(
-        <div>
-             <section className="bg-green-400 flex items-start justify-center text-3xl">
-        <p>
-        footer
-        </p> 
-        <nav>
-            </nav>   
+             <section className="bg-green-950 text-[#F5F5DC]">
+      <div className="grid grid-cols-3 text-center p-12 bg-green-950">
+  <div className=" border-r-4 ">
+    <h1>lucas</h1>
+    <p>lorem</p>
+  </div>
+  <div className=" border-r-4 ">
+    <h1>lucas</h1>
+    <p>lorem</p>
+  </div>
+  <div className="">
+    <h1>lucas</h1>
+    <p>lorem</p>
+  </div>
+</div>
+ 
     </section>
-        </div>
     )
 }
