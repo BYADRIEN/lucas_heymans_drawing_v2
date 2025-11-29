@@ -1,9 +1,20 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { ImGithub } from "react-icons/im";
 
-export default function dessins() {
+export default function Dessins() {
   return (
-    <section className="relative h-[60vh] md:h-[60h]">
-
+    <motion.section
+      className="relative h-[60vh] md:h-[60vh]"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 1.4,
+        ease: [0.16, 1, 0.3, 1],
+      }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
       {/* Image background */}
       <img
         className="
@@ -52,7 +63,6 @@ export default function dessins() {
           Mes dessins
         </a>
       </div>
-
-    </section>
+    </motion.section>
   );
 }

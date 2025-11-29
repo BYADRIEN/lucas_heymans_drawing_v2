@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Slider() {
   return (
     <section className="relative h-[70vh] md:h-screen w-full">
@@ -23,7 +27,15 @@ export default function Slider() {
           px-4
         "
       >
-        <p
+        {/* TITRE */}
+        <motion.p
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1.4,
+            ease: [0.16, 1, 0.3, 1]
+          }}
+          viewport={{ once: true, amount: 0.3 }}
           className="
             text-green-950 
             font-serif 
@@ -33,9 +45,18 @@ export default function Slider() {
           "
         >
           Lucas Heymans
-        </p>
+        </motion.p>
 
-        <div
+        {/* SOUS-TEXTE */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1.4,
+            delay: 0.3,
+            ease: [0.16, 1, 0.3, 1]
+          }}
+          viewport={{ once: true, amount: 0.3 }}
           className="
             text-green-950 
             font-serif 
@@ -45,9 +66,18 @@ export default function Slider() {
           "
         >
           dessinateur au fusain
-        </div>
+        </motion.div>
 
-        <a
+        {/* BOUTON */}
+        <motion.a
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1.4,
+            delay: 0.6,
+            ease: [0.16, 1, 0.3, 1]
+          }}
+          viewport={{ once: true, amount: 0.3 }}
           className="
             mt-6 md:mt-10
             bg-green-950 text-white 
@@ -60,9 +90,8 @@ export default function Slider() {
           href=""
         >
           Mes dessins
-        </a>
+        </motion.a>
       </div>
-
     </section>
   );
 }
