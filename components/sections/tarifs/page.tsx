@@ -1,4 +1,8 @@
-export default function dessins() {
+"use client";
+
+import { motion } from "framer-motion";
+
+export default function Dessins() {
   return (
     <section className="bg-[#F5F5DC]">
       <div
@@ -10,8 +14,17 @@ export default function dessins() {
           text-green-950
         "
       >
-        {/* Texte */}
-        <div className="mt-10 md:mt-20">
+        {/* Texte animé */}
+        <motion.div
+          className="mt-10 md:mt-20"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1.2,
+            ease: [0.16, 1, 0.3, 1],
+          }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h1 className="text-3xl md:text-5xl text-green-950 font-serif font-semibold">
             Tarifs
           </h1>
@@ -54,7 +67,7 @@ export default function dessins() {
           >
             Me contacter
           </a>
-        </div>
+        </motion.div>
 
         {/* Image */}
         <div className="flex justify-center md:block">
