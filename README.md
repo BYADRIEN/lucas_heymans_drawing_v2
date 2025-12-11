@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎨 Lucas Heymans — Portfolio V2
 
-## Getting Started
+Ce dépôt contient la version améliorée du portfolio de Lucas Heymans, un site Next.js pour présenter ses dessins et travaux artistiques.
+Cette V2 inclut des animations fluides grâce à Framer Motion et un slider refactoré pour améliorer l’expérience utilisateur.
 
-First, run the development server:
+🚀 Fonctionnalités
 
-```bash
+Galerie interactive des dessins
+
+Section “À propos de l’artiste”
+
+Slider refactoré pour présenter les œuvres
+
+Animations fluides avec Framer Motion
+
+Design responsive et moderne
+
+🛠️ Technologies utilisées
+
+Next.js 14 (App Router)
+
+React & TypeScript
+
+Tailwind CSS
+
+Framer Motion pour les animations
+
+Vercel pour le déploiement
+
+⚙️ Installation & démarrage
+1️⃣ Cloner le projet
+git clone https://github.com/BYADRIEN/lucas_heymans_drawing_v2.git
+cd lucas_heymans_drawing_v2
+
+2️⃣ Installer les dépendances
+npm install
+
+3️⃣ Lancer le serveur de développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Le site sera accessible sur : http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📂 Structure du projet
+app/
+ ├── page.tsx
+ ├── about/
+ ├── gallery/
+ └── components/
+     └── slider/  (refactored)
+public/
+style/
+ └── css / Tailwind
 
-## Learn More
+🌍 Déploiement
 
-To learn more about Next.js, take a look at the following resources:
+Optimisé pour un déploiement rapide sur Vercel.
+📌 Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📸 Aperçu
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+(Ajouter captures d’écran ou GIF du slider / animations pour montrer Framer Motion)
 
-## Deploy on Vercel
+🤝 Contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Les contributions, suggestions ou améliorations sont les bienvenues via issues ou pull requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 Licence
+
+© 2025 — Adrien Selle
