@@ -17,8 +17,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mon Super Site",
-  description: "Bienvenue sur mon portfolio",
+  title: "Lucas Heymans Drawing",
+  description: "Mon Portfolio",
 };
 
 export default function RootLayout({
@@ -30,10 +30,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className={`${lora.variable} ${robotoMono.variable} antialiased`}>
         <Header />
-        {/* Le main contient UNIQUEMENT children, c'est ici que les pages s'injectent */}
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
