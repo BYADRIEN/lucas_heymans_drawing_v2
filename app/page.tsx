@@ -1,7 +1,15 @@
-import Image from "next/image";
+import Slider from "../components/sections/slider/page";
+import About from "../components/sections/aboutme/page";
+import Dessins from "../components/sections/dessins/page";
+import Tarifs from "../components/sections/tarifs/page";
 
-export default function Home() {
+export default function HomePage() {
   return (
-<p></p>
+    <>
+      <Slider />
+      <About />
+      <Dessins />
+      <Tarifs />
+    </>
   );
 }

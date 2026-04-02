@@ -36,7 +36,7 @@ export default function Header() {
           {/* Nom centré */}
           <a
             className="text-[#F5F5DC] text-3xl font-semibold whitespace-nowrap"
-            href=""
+            href="/"
           >
             Lucas Heymans
           </a>
@@ -54,6 +54,7 @@ export default function Header() {
             <ul className="flex gap-12 text-[#F5F5DC]">
               <li><a href="">A propos</a></li>
               <li><a href="">Contact</a></li>
+                            <li><a href="/login">Se connecter</a></li>
             </ul>
           </div>
         </div>
