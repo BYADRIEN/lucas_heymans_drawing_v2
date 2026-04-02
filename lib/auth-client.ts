@@ -1,11 +1,12 @@
 import { createAuthClient } from "better-auth/react";
 import { twoFactorClient } from "better-auth/plugins";
 
-// On utilise NEXT_PUBLIC_BETTER_AUTH_URL si défini, sinon localhost pour dev
-const baseURL =
-  process.env.NEXT_PUBLIC_BETTER_AUTH_URL || "http://localhost:3000";
+// Détection si on est en local ou en prod
+const isLocal = typeof window !== "undefined" && window.location.hostname === "localhost";
 
 export const authClient = createAuthClient({
-  baseURL,
+  baseURL: isLocal
+    ? "http://localhost:3000" // backend local
+    : "https://lucas-heymans-drawing-v2.vercel.app", // backend prod
   plugins: [twoFactorClient()],
 });
