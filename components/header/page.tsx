@@ -66,6 +66,7 @@ export default function Header() {
             <a href="">Tarif</a>
             <a href="">A propos</a>
             <a href="">Contact</a>
+            <li><a href="/login">Se connecter</a></li>
           </div>
         )}
       </div>
