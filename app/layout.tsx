@@ -4,6 +4,7 @@ import "./globals.css";
 import "../style/style.css";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
+import QueryProvider from "@/utils/QueryClient";
 
 // 1. Configuration des polices
 const lora = Lora({
@@ -36,7 +37,7 @@ export default function RootLayout({
         
         {/* C'est ici que le contenu de tes pages (Accueil ou Login) s'affichera */}
         <main>
-          {children}
+          <QueryProvider>{children}</QueryProvider>
         </main>
         
         <Footer />
