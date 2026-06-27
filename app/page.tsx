@@ -2,6 +2,7 @@ import Slider from "../components/sections/slider/page";
 import About from "../components/sections/aboutme/page";
 import Dessins from "../components/sections/dessins/page";
 import Tarifs from "../components/sections/tarifs/page";
+import AddForm from "../components/addform";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <About />
       <Dessins />
       <Tarifs />
+      <AddForm />
     </>
   );
 }
