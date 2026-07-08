@@ -3,6 +3,7 @@ import About from "../components/sections/aboutme/page";
 import Dessins from "../components/sections/dessins/page";
 import Tarifs from "../components/sections/tarifs/page";
 import AddForm from "../components/addform";
+import ProductsTab  from "../components/ProductTab";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Dessins />
       <Tarifs />
       <AddForm />
+      <ProductsTab />
     </>
   );
 }
