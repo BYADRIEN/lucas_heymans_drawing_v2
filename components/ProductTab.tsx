@@ -63,6 +63,7 @@ export default function ProductsTab() {
                                         {product.id} {product.name} {product.quantity} {product.price}
                                     </td>
                                     <td>
+                                        <Link href={`/characters/test/${product.name}`}>See statts</Link>
                                         <Link href={`product/${product.id}`}>Modifier</Link>
                                         
                                         {/* 🌟 LE BOUTON CLASSIQUE SANS FORMULAIRE NI IMPORT MAL SÉLECTIONNÉ */}
